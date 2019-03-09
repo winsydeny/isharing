@@ -1,0 +1,59 @@
+<view class="header" hover-class="none" hover-stop-propagation="false">
+    <view wx:if="{{!canIUse}}">
+      <view class="header-img">
+          <!-- <open-data type="userAvatarUrl"></open-data> -->
+          <image class="img" src="{{userInfos.avatarUrl}}"></image>
+          <view class="cu-tag badge gender {{ userInfos.gender === 1?'icon-male bg-blue':'icon-female bg-pink' }}"></view>
+      </view>
+      <view class="header-name">
+          <!-- <open-data type="userNickName"></open-data> -->
+          <text>{{userInfos.nickName}}</text>
+      </view>
+    </view>
+    <view wx:if="{{true}}">
+        <button 
+          class="btn"
+          wx:if="{{canIUse}}"
+          open-type="getUserInfo"
+          bindgetuserinfo="bindGetUserInfo">Login</button>
+    </view>
+</view>
+
+
+
+
+<view class="cu-list menu sm-border list-size">
+    <view class="cu-item arrow" bindtap="goto" data-url="personal">
+        <view class='content' >
+            <text class='icon-form'></text>
+            <text class='text-grey'>个人资料</text>
+        </view>
+    </view>
+      <view class="cu-item arrow" bindtap="goto" data-url="score">
+        <view class='content' >
+            <text class='icon-card text-grey'></text>
+            <text class='text-grey'>积分</text>
+        </view>
+    </view>
+
+    <!-- <view class="cu-item arrow" bindtap="goto" data-url="score">
+        <view class='content' >
+            <text class='icon-card text-grey'></text>
+            <text class='text-grey'>Settings</text>
+        </view>
+    </view> -->
+    
+      <view class="cu-item arrow" bindtap="goto" data-url="shopping">
+        <view class='content' >
+            <text class='icon-shop text-grey'></text>
+            <text class='text-grey'>商店</text>
+        </view>
+    </view>
+      <view class="cu-item arrow" bindtap="goto" data-url="settings">
+        <view class='content' >
+            <text class='icon-settings text-grey'></text>
+            <text class='text-grey'>设置</text>
+        </view>
+    </view>
+</view>
+

@@ -1,0 +1,11 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+    <h1>{{appname}}</h1>
+    <button bindtap="getInfo">{{btnName}}</button>
+    <button bindtap="getGlobal">Global</button>
+
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false"
+  wx:for="{{queryResult}}" wx:key="number"
+>
+  {{item._openid}}
+</view>

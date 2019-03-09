@@ -1,0 +1,15 @@
+.must-icon{
+  color: red;
+  margin: 8rpx;
+}
+
+.btn-line{
+  border:1rpx solid red;
+  padding: 8rpx 18rpx;
+  font-size: 22rpx;
+  border-radius: 6rpx;
+  color: red;
+}
+image{
+  height: 210rpx;
+}

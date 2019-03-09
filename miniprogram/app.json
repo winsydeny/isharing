@@ -1,0 +1,49 @@
+{
+  "pages": [
+
+    
+    "pages/views/home/home",
+    
+    "pages/views/sharing/sharing",
+    "pages/views/sharing/upload/upload",
+    
+    
+    
+    "pages/views/me/me",
+    
+    "pages/views/me/personal/personal",
+    "pages/views/me/score/score",
+    "pages/views/me/settings/settings",
+    "pages/views/me/shopping/shopping"
+    
+  ],
+  "window": {
+    "backgroundColor": "",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1cbbb4",
+    "navigationBarTitleText":"ISharing"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/views/home/home",
+        "iconPath":"images/basics.png",
+        "selectedIconPath":"images/basics_cur.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/views/sharing/sharing",
+        "iconPath":"images/component.png",
+        "selectedIconPath":"images/component_cur.png",
+        "text": "Sharing"
+      },
+      {
+        "pagePath": "pages/views/me/me",
+        "iconPath":"images/about.png",
+        "selectedIconPath":"images/about_cur.png",
+        "text": "Me"
+      }
+      
+    ]
+  }
+}

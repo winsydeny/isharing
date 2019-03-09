@@ -1,0 +1,13 @@
+.daily{
+  font-size: 34rpx;
+  /* color: deepskyblue; */
+  /* margin-top: 60rpx; */
+  text-align: center;
+  display: block;
+}
+.rec{
+  height: 100%;
+}
+.card-swiper{
+  height: 100%;
+}

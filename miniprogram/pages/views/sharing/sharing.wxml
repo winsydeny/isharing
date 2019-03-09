@@ -1,0 +1,37 @@
+<view class="header">
+  <view class="search light" hover-class="none" hover-stop-propagation="false">
+      <input type="text" bindinput="itemSearch"></input>
+      <text class='icon-roundadd text-grey icon-size' bindtap="upload"></text>
+  </view>
+</view>
+
+<view class="show-nodata" wx:if="{{nodatas}}"><text>暂无数据</text></view>
+
+<view class="book-list" style="width:100%;">
+    <view class="list-box" wx:for="{{books}}" wx:key="1">
+        <image class="box-img" src="{{item.bookUrl}}" mode="aspectFit|  aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <view class="box-text">
+            <view class="tittle">
+                <text>{{item.bookName}}</text>
+            </view>
+            <view class="author">
+                <text>作者:</text>
+                <text> {{item.bookAuthor}}</text>
+            </view>
+            <view class="recommend">
+                <text class="recommend-tittle">推荐理由:</text>
+                <text> {{item.recommend}}</text>
+            </view>
+            <view class="text-gray text-sm icon-position">
+              <text class="icon-attentionfill"></text> 0
+              <text class="icon-appreciatefill"></text> 0
+              <text class="icon-messagefill" data-id="{{item._id}}" bindtap="comment"></text> 0
+            </view>
+        </view>
+    </view>
+</view>
+<view class="bottom" wx:if="{{loading}}">
+  <button class="cu-btn bg-blue shadow" bindtap="loadmore">点击加载更多</button>
+</view>
+
+
